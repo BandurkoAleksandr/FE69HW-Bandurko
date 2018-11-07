@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodacts</title>
+    <link rel="stylesheet" href="../CSS/reset-css.css">
+    <!-- <link rel="stylesheet" href="../CSS/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../CSS/CSS.css">
+</head>
+<body>
+    <div class="productForm">
+        <p>Выберете товар:</p>
+        <form class="form-group"> 
+            <label >
+                Sand
+                <input  type="radio"
+                        value="sand"
+                        name="product"
+                        id="sand"
+                        checked>
+            </label>
+            <label>
+                Rubble
+                <input  type="radio"
+                        value="rubble"
+                        name="product"
+                        id="rubble">
+            </label>
+            <label >
+                Pebbles
+                <input  type="radio"
+                        value="pebbles"
+                        name="product"
+                        id="pebbles">
+            </label>
+            <div class="product-quantity">
+                <label for="newNumber">Введите вес товара (не более 1000кг)
+                <input type="number" 
+                       name="quantity"
+                       min="1"
+                       max="1000" 
+                       id="newNumber">
+                </label>
+            </div>
+        </form>
+            <button class="button-basket btn" 
+                    type="submit">В корзину</button>
+            <div class="basket">
+                <p>Ваш заказ:</p>
+                <ul class="target"></ul>
+                <button class="button-order btn">Оформить заказ</button>
+                <div class="result"></div>
+            </div>
+    </div>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

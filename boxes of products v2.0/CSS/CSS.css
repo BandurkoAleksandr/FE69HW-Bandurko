@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+.productForm{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-around;  */
+}
+input{
+    margin: 5px 0;
+}
+.btn{
+    width: 200px;
+    margin: 5px 0;
+    padding: 3px 0;
+    border: 1px solid #0033cc;
+    background-color:#0040ff;
+    color:white;
+}
+
+.fade-leave-active{
+    animation: niceOut 1s linear forwards;
+}
+.fade-enter{
+    visibility: hidden;
+}
+.fade-enter-active{
+    animation: niceIn 1s linear;
+}
+
+@keyframes niceIn{
+    from{
+        transform: translateX(-100px) scale(0.9);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes niceOut{
+    from{
+        transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(100px) scale(0.9);
+        opacity: 0;
+    }
+}
