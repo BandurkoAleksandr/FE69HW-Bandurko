@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Home work 3</title>
+    <link rel="stylesheet" href="../CSS/CSS.css">
+</head>
+
+<body>
+    <input type="color"
+           id="newColor">
+    <div>
+        <label>
+            Circle
+            <input type="radio"
+                   value="circle"
+                   name="figure"
+                   checked>
+        </label>
+        <label>
+            Square
+            <input type="radio"
+                   value="square"
+                   name="figure">
+        </label>
+        <label>
+            Rectangle
+            <input type="radio"
+                   value="rectangle"
+                   name="figure"
+                   class="inpTarget">
+        </label>
+        <label>
+            Oval
+            <input type="radio"
+                   value="oval"
+                   name="figure"
+                   class="inpTarget">
+        </label>
+    </div>
+    <div class="animTarget">
+        <div class="figWidth">
+            <label for="newWidth">Введите ширину фигуры
+            <input type="number" 
+                   name="quantity"
+                   min="1"
+                   max="500" 
+                   id="newWidth">
+            </label>
+        </div>
+        <div class="figHeight">
+            <label for="newHeight">Введите высоту фигуры
+            <input type="number" 
+                   name="quantity"
+                   min="1"
+                   max="500" 
+                   id="newHeight">
+            </label>
+        </div>
+    </div>
+    
+    <div class="area"
+         id="area">
+    </div>
+
+
+    <script src="../JS/main.js"></script>
+    <script src="../JS/main2.js"></script>
+</body>
+
+</html>
