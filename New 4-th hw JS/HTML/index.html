@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Notes</title>
+    <link rel="stylesheet" href="../CSS/CSS.css">
+</head>
+
+<body>
+
+    <div data-module="notes"
+         class="notes">
+        <div class="notes__input new-note">
+            <input type="text"
+                   class="new-note__input">    
+            <button class="new-note__btn">Add note</button>
+            <div class="emptyalert error-message">Введите название заметки!!!</div>
+            <div class="fullalert error-message">Текст заметки не должен превишать 160 символов!!!</div>
+        </div>
+        <div class="notes__list"></div>
+        <div class="length"></div>
+    </div>
+
+    <script src="../JS/notes/notes.model.js"></script>
+    <script src="../JS/notes/notes.view.js"></script>
+    <script src="../JS/notes/notes.controller.js"></script>
+    <script src="../JS/app.js"></script>
+</body>
+
+</html>
